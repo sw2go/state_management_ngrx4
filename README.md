@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=brCGZ8Lk-HY&t=1107s
 
 * Go to `server`
 * Run `npm install`
-* Run `npm run server`
+* Run `npm start`
 * Go to `clientapp`
 * Run `npm install`
 * Run `ng serve`
