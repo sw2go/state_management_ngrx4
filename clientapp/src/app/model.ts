@@ -47,9 +47,9 @@ export function appReducer(state: AppState, action): AppState {
             return { ...state, talks };
         }
         case 'TALK_WATCH': {
-            const watched = { ...state.watched };
-            watched[action.payload.talkId] = true;
-            return { ...state, watched };
+            const watched = { ...state.watched };           // macht eine neue watched Instanz basierend auf der alten im state
+            watched[action.payload.talkId] = true;          // Fügt key/value talkid/true im Dic hinzu 
+            return { ...state, watched };                   // macht eine neue state Instanz basierend auf dem alten state und überschreibt die watched property
         }
         case 'RATE': {
             const talks = { ...state.talks };
